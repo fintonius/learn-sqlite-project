@@ -45,6 +45,7 @@ app.post("/logout", (req, res) => {
 });
 
 app.post("/newpost", (req, res) => {
+  console.log('this is newpost req: ', req.body)
   res.redirect("/home");
 });
 
